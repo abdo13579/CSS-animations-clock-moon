@@ -1,6 +1,6 @@
 # Animations Collection
 
-This folder contains simple CSS and HTML animations. Each subfolder demonstrates a different animation effect.
+This repo contains simple CSS and HTML animations. Each subfolder demonstrates a different animation effect.
 
 ## Contents
 
