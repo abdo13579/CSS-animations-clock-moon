@@ -4,6 +4,8 @@
 }
 body {
   background-image: url("./galaxy.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .container {
   display: flex;
