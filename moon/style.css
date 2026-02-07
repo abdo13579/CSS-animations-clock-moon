@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-image: url("./galaxy.webp");
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+img[alt=earth] {
+  width: 400px;
+}
+.moon {
+  background-color: transparent;
+  position: absolute;
+  width: 400px;
+  aspect-ratio: 1 / 1;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  animation: moon-rotation 30s linear infinite;
+}
+img[alt=moon] {
+  width: 80px;
+  transform: translateY(-100%);
+}
+@keyframes moon-rotation {
+  to {
+    rotate: 360deg;
+  }
+}
+@media (max-width: 768px) {
+  img[alt=earth] {
+    width: 300px;
+  }
+  .moon {
+    width: 300px;
+  }
+  img[alt=moon] {
+    width: 60;
+  }
+}
