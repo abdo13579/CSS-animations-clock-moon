@@ -6,8 +6,10 @@ This repo contains simple CSS and HTML animations. Each subfolder demonstrates a
 
 - **clock/**
   - `index.html`, `style.css`: A simple animated clock using CSS and HTML.
+  - Preview link: [https://clock-css-animation.netlify.app/](https://clock-css-animation.netlify.app/)
 - **moon/**
   - `index.html`, `style.css`: A simple moon animation using CSS and HTML.
+  - Preview link: [https://earth-moon-animation.netlify.app/](https://earth-moon-animation.netlify.app/)
 
 ## Usage
 
