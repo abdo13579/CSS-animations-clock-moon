@@ -2,6 +2,9 @@
   margin: 0;
   padding: 0;
 }
+html {
+  font-size: 10px;
+}
 body {
   background-image: url("./galaxy.webp");
   background-repeat: no-repeat;
@@ -14,12 +17,12 @@ body {
   height: 100vh;
 }
 img[alt=earth] {
-  width: 400px;
+  width: 40rem;
 }
 .moon {
   background-color: transparent;
   position: absolute;
-  width: 400px;
+  width: 40rem;
   aspect-ratio: 1 / 1;
   display: flex;
   justify-content: center;
@@ -27,7 +30,7 @@ img[alt=earth] {
   animation: moon-rotation 30s linear infinite;
 }
 img[alt=moon] {
-  width: 80px;
+  width: 8rem;
   transform: translateY(-100%);
 }
 @keyframes moon-rotation {
@@ -36,13 +39,12 @@ img[alt=moon] {
   }
 }
 @media (max-width: 768px) {
-  img[alt=earth] {
-    width: 300px;
+  html {
+    font-size: 6px;
   }
-  .moon {
-    width: 300px;
-  }
-  img[alt=moon] {
-    width: 60;
+}
+@media (max-width: 480px) {
+  html {
+    font-size: 5px;
   }
 }
