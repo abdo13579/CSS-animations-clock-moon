@@ -3,6 +3,10 @@
   padding: 0;
 }
 
+html {
+  font-size: 10px;
+}
+
 .container {
   display: flex;
   flex-direction: column;
@@ -14,19 +18,19 @@
 
 .box {
   background-color: #00b1d5;
-  font-size: 30px;
-  width: 400px;
+  font-size: 3rem;
+  width: 40rem;
   aspect-ratio: 1 / 1;
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
-  border-radius: 14px;
+  border-radius: 1.4rem;
   box-shadow: 0px 0px 1px 0px;
 }
 
 .clock-point {
-  width: 20px;
+  width: 2rem;
   aspect-ratio: 1 / 1;
   background-color: black;
   border-radius: 50%;
@@ -35,14 +39,11 @@
 
 .clock-bar {
   height: 40%;
-  width: 15px;
+  width: 1.5rem;
   background-color: white;
   position: absolute;
   bottom: 50%;
   border-radius: 6px;
-}
-
-.box:hover .clock-bar {
   animation: clock-animation 60s steps(60) infinite;
   transform-origin: bottom;
 }
@@ -54,63 +55,75 @@ p {
 }
 
 .p-1 {
-  top: 20px;
-  right: 76px;
+  top: 2rem;
+  right: 7.6rem;
 }
 
 .p-2 {
-  right: 24px;
-  top: 94px
+  right: 2.4rem;
+  top: 9.4rem;
 }
 
 .p-3 {
-  right: 6px;
+  right: .6rem;
 }
 
 .p-4 {
-  right: 24px;
-  bottom: 94px;
+  right: 2.4rem;
+  bottom: 9.4rem;
 }
 
 .p-5 {
-  bottom: 20px;
-  right: 76px;
+  bottom: 2rem;
+  right: 7.6rem;
 }
 
 .p-6 {
-  bottom: 6px;
+  bottom: .6rem;
 }
 
 .p-7 {
-  bottom: 20px;
-  left: 76px
+  bottom: 2rem;
+  left: 7.6rem;
 }
 
 .p-8 {
-  left: 24px;
-  bottom: 94px;
+  left: 2.4rem;
+  bottom: 9.4rem;
 }
 
 .p-9 {
-  left: 6px;
+  left: .6rem;
 }
 
 .p-10 {
-  left: 24px;
-  top: 94px;
+  left: 2.4rem;
+  top: 9.4rem;
 }
 
 .p-11 {
-  top: 20px;
-  left: 76px;
+  top: 2rem;
+  left: 7.6rem;
 }
 
 .p-12 {
-  top: 6px;
+  top: .6rem;
 }
 
 @keyframes clock-animation {
   to {
     transform: rotate(360deg);
+  }
+}
+
+@media (max-width: 767px) {
+  html {
+    font-size: 8px;
+  }
+}
+
+@media (max-width: 380px) {
+  html {
+    font-size: 6px;
   }
 }
